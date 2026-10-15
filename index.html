@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Habit Pups: the habit tracker where every habit is a puppy</title>
+  <meta name="description" content="Habit Pups is a cute habit tracker for iPhone. Every habit gets a puppy that celebrates when you check it off, learns tricks as your streak grows, and lives in Home and Lock Screen widgets. Two dogs free.">
+  <link rel="canonical" href="https://habitpups.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Habit Pups">
+  <meta property="og:title" content="Habit Pups: the habit tracker where every habit is a puppy">
+  <meta property="og:description" content="Check off a habit and your dog celebrates. Keep the streak, and it learns tricks. For iPhone.">
+  <meta property="og:url" content="https://habitpups.app/">
+  <meta property="og:image" content="https://habitpups.app/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Habit Pups: eight cartoon puppies in a sunny yard, one for each habit">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#fff8ec">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Habit Pups",
+  "alternateName": "Habit Pups: Habit Tracker",
+  "description": "A habit tracker for iPhone where every habit is a puppy. Check off a habit and your dog celebrates; keep a streak and it learns tricks, earns toys and gets dressed up. Home Screen and Lock Screen widgets keep your habits in view.",
+  "operatingSystem": "iOS 17 or later",
+  "applicationCategory": "HealthApplication",
+  "applicationSubCategory": "Habit tracker",
+  "url": "https://habitpups.app/",
+  "image": "https://habitpups.app/assets/icon-512.png",
+  "screenshot": [
+    "https://habitpups.app/assets/screens/01-kennel.jpg",
+    "https://habitpups.app/assets/screens/02-check-off.jpg",
+    "https://habitpups.app/assets/screens/03-tricks.jpg",
+    "https://habitpups.app/assets/screens/07-widget-large.jpg"
+  ],
+  "featureList": [
+    "One puppy per habit, from 17 breeds",
+    "Streaks teach 14 tricks and earn 9 toys and outfits",
+    "Daily, certain-day or few-times-a-week schedules",
+    "A reminder for each habit",
+    "Home Screen and Lock Screen widgets",
+    "History grid and per-habit stats",
+    "iCloud sync, no account, no tracking"
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Free, with two dogs",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Habit Pups Plus, yearly",
+      "price": "9.99",
+      "priceCurrency": "USD"
+    },
+    {
+      "@type": "Offer",
+      "name": "Habit Pups Plus, monthly",
+      "price": "1.99",
+      "priceCurrency": "USD"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Habit Pups",
+    "url": "https://habitpups.app/",
+    "email": "support@habitpups.app",
+    "logo": "https://habitpups.app/assets/icon-512.png"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Habit Pups",
+  "url": "https://habitpups.app/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Habit Pups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A habit tracker where every habit is a puppy in your yard. When you do the habit, you tap its dog and it celebrates. Do it day after day and the streak teaches it tricks and earns it toys and things to wear. Skip it and the dog gets a little sad, until you're back."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I miss a day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your dog misses you: a day or two and it looks a bit down, longer and it lies about. It never runs away and nothing is lost. One check-off and it perks right back up. Did it, but forgot to tick it before bed? Tap the dog and use Missed yesterday? to log yesterday."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do streaks work for habits that aren't every day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each habit can be every day, certain days (say, weekdays), or a few times a week. Days the habit doesn't ask for are rest days: they never break a streak. For a few-times-a-week habit, the streak counts the times in a row you've hit it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do dogs learn tricks and earn things?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every dog knows two tricks to start with and learns a new one at streaks of 3, 7, 10, 14 days and on, up to backflips for the very committed. Toys and outfits come with streaks too: a frisbee at 5 days, a bandana at 10, sunglasses at 45, a cape at 100 and a golden crown at a full year. A broken streak never takes anything away."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it help me keep a New Year's resolution?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, that's a great use for it. Turn the resolution into one small action (\"read 10 pages\", \"a 10 minute walk\"), give it its own puppy and a reminder, and put the Lock Screen widget where you'll see it. Your pup learns its first new trick at a 3-day streak and keeps learning for a year. There's more in our guide to keeping a New Year's resolution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Habit Pups on Android or the web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet: Habit Pups is for iPhone (iOS 17 or later). Your kennel also syncs to an iPad signed in to the same Apple ID."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two dogs are free, with everything: tricks, toys, outfits, widgets and sharing. Habit Pups Plus makes room for up to 10 dogs, for $9.99 a year or $1.99 a month (prices may vary by country). Cancel any time; your dogs and their history are never lost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I restore Plus, or use a promo code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the app, go to Settings › Habit Pups Plus and tap Restore purchases (sign in with the Apple ID you bought it with) or Redeem code. Codes also work in the App Store app: tap your profile picture, then Redeem Gift Card or Code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I cancel my subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Subscriptions are handled by Apple. On your iPhone, open Settings, tap your name, then Subscriptions, and pick Habit Pups. You can also get there from Settings › Habit Pups Plus › Manage subscription in the app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my dogs move to a new iPhone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your kennel syncs through your own iCloud, so sign in with the same Apple ID and your dogs and their history come with you. It also keeps an iPhone and an iPad in step. You can check it's on in the app under Settings › Data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I add a widget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Home Screen: touch and hold an empty spot until the apps jiggle, tap Edit › Add Widget, search for Habit Pups and pick a size. Lock Screen: touch and hold the Lock Screen, tap Customize › Lock Screen, tap the space under the clock and pick Habit Pups. The round one shows a dog of your choice, in a ring that fills as the day's habits get done."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it remind me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, two ways. An evening nudge (Settings › Reminder) goes out only if a dog is still waiting, and each habit can have its own reminder at a time you choose. Do the habit early and that day's reminder stays quiet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do you do with my data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nothing: we never see it. There are no accounts, no ads and no tracking. Your habits live on your device and in your own iCloud. Read the privacy policy. To delete everything, go to Settings › Data › Reset everything in the app. To take a copy first, use Export data."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./">
+        <img src="assets/apple-touch-icon.png" alt="">
+        <span>Habit <b>Pups</b></span>
+      </a>
+      <nav aria-label="Site">
+        <a href="#screens">Tour</a>
+        <a href="#widgets">Widgets</a>
+        <a href="guides/">Guides</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <img class="logo" src="assets/logo.png" alt="Habit Pups">
+          <p class="eyebrow">A habit tracker for iPhone</p>
+          <h1>Every habit gets a <em>puppy.</em></h1>
+          <p class="lede">Check off a habit and your dog celebrates. Keep a streak and it learns tricks, earns toys and gets dressed up. Miss a day, and it misses you.</p>
+          <div class="cta-row">
+            <!-- When the app is live: set href to its App Store link and remove aria-disabled. -->
+            <a class="store" href="#" aria-disabled="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.84.86-3.6 2.18-1.54 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.41 1.2-2.47-.03-.01-2.3-.88-2.32-3.52zM14.2 6.13c.6-.73 1-1.73.9-2.74-.87.04-1.92.58-2.54 1.3-.56.64-1.05 1.67-.92 2.66.97.07 1.96-.49 2.56-1.22z"/></svg>
+              <span><small>Coming soon to the</small>App Store</span>
+            </a>
+            <span class="price-note">Two dogs free. iPhone.</span>
+          </div>
+        </div>
+
+        <div class="studio" aria-label="Meet the pups: pick a breed, a trick and something to wear">
+          <div class="yard" id="yard">
+            <canvas id="yard-bg" aria-hidden="true"></canvas>
+            <canvas id="yard-dog" role="img" aria-label="A golden retriever puppy, wagging its tail"></canvas>
+            <div class="tag" id="breed-tag">Golden Retriever</div>
+            <div class="hint">Tap the pup</div>
+          </div>
+          <div class="controls">
+            <div class="group">
+              <h3 id="breed-label">Pick a pup</h3>
+              <div class="breeds" id="breeds" role="group" aria-labelledby="breed-label"></div>
+            </div>
+            <div class="group">
+              <h3 id="trick-label">Teach a trick</h3>
+              <div class="chips" id="tricks" role="group" aria-labelledby="trick-label"></div>
+            </div>
+            <div class="group">
+              <h3 id="wear-label">Dress up</h3>
+              <div class="wear" id="wear" role="group" aria-labelledby="wear-label"></div>
+            </div>
+            <div class="group">
+              <h3 id="mood-label">How's the habit going?</h3>
+              <div class="chips" id="moods" role="group" aria-labelledby="mood-label"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="screens" aria-labelledby="screens-title">
+        <div class="section-head with-nav">
+          <div>
+            <h2 id="screens-title">Take a look around</h2>
+            <p>Straight from the app: the yard, the tricks, the stats and the widgets.</p>
+          </div>
+          <div class="reel-nav">
+            <button type="button" class="reel-btn" data-dir="-1" aria-label="Previous screenshots" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <button type="button" class="reel-btn" data-dir="1" aria-label="Next screenshots">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+        <ul class="reel" id="reel" tabindex="0" aria-label="App screenshots">
+            <li><img src="assets/screens/01-kennel.jpg" width="600" height="1303" loading="eager" alt="Every habit gets a puppy: eight dogs in the summer yard"></li>
+            <li><img src="assets/screens/02-check-off.jpg" width="600" height="1303" loading="eager" alt="Check it off: Bruno leaps for joy in a burst of confetti"></li>
+            <li><img src="assets/screens/03-tricks.jpg" width="600" height="1303" loading="eager" alt="Streaks teach tricks: Luna learns High five and earns a bandana"></li>
+            <li><img src="assets/screens/04-notice.jpg" width="600" height="1303" loading="lazy" alt="They notice when you skip: Nube missed you yesterday"></li>
+            <li><img src="assets/screens/05-history.jpg" width="600" height="1303" loading="lazy" alt="Every day at a glance: the History tab"></li>
+            <li><img src="assets/screens/06-stats.jpg" width="600" height="1303" loading="lazy" alt="Honest stats for every habit: Bruno's grid and streak"></li>
+            <li><img src="assets/screens/07-widget-large.jpg" width="600" height="1303" loading="lazy" alt="The large widget: the whole kennel on your Home Screen"></li>
+            <li><img src="assets/screens/08-widget-medium.jpg" width="600" height="1303" loading="lazy" alt="The medium widget: a few pups, always in view"></li>
+            <li><img src="assets/screens/09-schedules.jpg" width="600" height="1303" loading="lazy" alt="Any schedule, gentle reminders: Luna's weekday runs at 6:45"></li>
+        </ul>
+      </section>
+
+      <section class="section widgets" id="widgets" aria-labelledby="widgets-title">
+        <div class="section-head">
+          <h2 id="widgets-title">Put your pups <em>where you'll see them</em></h2>
+          <p>The easiest streak to keep is the one you see every time you pick up your phone. Add a Habit Pups widget and your dogs live on your Home Screen and Lock Screen, cheering when you're done and waiting when you're not.</p>
+        </div>
+        <div class="widget-grid">
+          <figure class="widget-card big">
+            <img src="assets/widgets/large.png" width="720" height="751" loading="lazy" alt="The large Habit Pups widget: eight dogs in a sunny yard, 6 of 8 done today">
+            <figcaption><strong>Large</strong> The whole kennel, with today's count in the corner.</figcaption>
+          </figure>
+          <div class="widget-stack">
+            <figure class="widget-card">
+              <img src="assets/widgets/medium.png" width="720" height="332" loading="lazy" alt="The medium Habit Pups widget: five happy dogs by the kennel">
+              <figcaption><strong>Medium</strong> A few pups at a time, changing through the day.</figcaption>
+            </figure>
+            <figure class="widget-card lock">
+              <div class="lock-tile" aria-hidden="true">
+                <span class="lock-time">9:41</span>
+                <img src="assets/widgets/lock.png" width="380" height="380" loading="lazy" alt="">
+              </div>
+              <figcaption><strong>Lock Screen</strong> Your favourite pup in a ring that fills with every habit you finish. The fuller the ring, the happier the face.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="widget-how">Adding one takes ten seconds: touch and hold your Home Screen, tap <strong>Edit › Add Widget</strong> and search for Habit Pups. <a href="#faq-widgets">Step by step</a></p>
+      </section>
+
+      <section class="section" aria-labelledby="how-title">
+        <div class="section-head">
+          <h2 id="how-title">A yard full of good habits</h2>
+          <p>No charts to feel bad about. Just dogs, and how they're doing.</p>
+        </div>
+        <div class="points">
+          <div class="point">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="16" rx="5" ry="4.2"/><circle cx="6" cy="10" r="2.3"/><circle cx="10" cy="6.5" r="2.3"/><circle cx="14" cy="6.5" r="2.3"/><circle cx="18" cy="10" r="2.3"/></svg></div>
+            <h3>One dog per habit</h3>
+            <p>Read, run, meditate, drink water: each habit gets its own puppy, with its own breed, name and personality.</p>
+          </div>
+          <div class="point">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.8l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.6l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+            <h3>Streaks teach tricks</h3>
+            <p>Keep it going and your dog learns to roll over, play dead, dance, even backflip, and earns toys, sunglasses, a cape and a crown.</p>
+          </div>
+          <div class="point">
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 10V7.5a5 5 0 0 1 10 0V10h.5A1.5 1.5 0 0 1 19 11.5v8A1.5 1.5 0 0 1 17.5 21h-11A1.5 1.5 0 0 1 5 19.5v-8A1.5 1.5 0 0 1 6.5 10zm2.2 0h5.6V7.5a2.8 2.8 0 0 0-5.6 0z"/></svg></div>
+            <h3>Private by design</h3>
+            <p>No account. Your habits stay on your iPhone and in your own iCloud. We never see them.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="guides-title">
+        <div class="section-head">
+          <h2 id="guides-title">Guides</h2>
+          <p>Short, practical reads on building habits that last.</p>
+        </div>
+        <ul class="guide-list cols">
+          <li><a href="guides/new-years-resolutions/"><strong>How to actually keep a New Year's resolution</strong><span>Make it tiny, give it a cue, keep it in sight, never miss twice.</span></a></li>
+          <li><a href="guides/habit-tracker-you-will-stick-with/"><strong>A habit tracker for people who quit habit trackers</strong><span>Why checklists get abandoned, and what keeps you opening one.</span></a></li>
+          <li><a href="guides/iphone-habit-tracker-widgets/"><strong>Habit tracker widgets for iPhone</strong><span>Keep your habits in sight on your Home Screen and Lock Screen.</span></a></li>
+        </ul>
+      </section>
+
+      <section class="section" id="faq" aria-labelledby="faq-title">
+        <div class="section-head">
+          <h2 id="faq-title">Questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>What is Habit Pups?</summary>
+            <div class="answer">
+              <p>A habit tracker where every habit is a puppy in your yard. When you do the habit, you tap its dog and it celebrates. Do it day after day and the streak teaches it tricks and earns it toys and things to wear. Skip it and the dog gets a little sad, until you're back.</p>
+            </div>
+          </details>
+          <details>
+            <summary>What happens if I miss a day?</summary>
+            <div class="answer">
+              <p>Your dog misses you: a day or two and it looks a bit down, longer and it lies about. It never runs away and nothing is lost. One check-off and it perks right back up.</p>
+              <p>Did it, but forgot to tick it before bed? Tap the dog and use <strong>Missed yesterday?</strong> to log yesterday.</p>
+            </div>
+          </details>
+          <details>
+            <summary>How do streaks work for habits that aren't every day?</summary>
+            <div class="answer">
+              <p>Each habit can be every day, certain days (say, weekdays), or a few times a week. Days the habit doesn't ask for are rest days: they never break a streak. For a few-times-a-week habit, the streak counts the times in a row you've hit it.</p>
+            </div>
+          </details>
+          <details>
+            <summary>How do dogs learn tricks and earn things?</summary>
+            <div class="answer">
+              <p>Every dog knows two tricks to start with and learns a new one at streaks of 3, 7, 10, 14 days and on, up to backflips for the very committed. Toys and outfits come with streaks too: a frisbee at 5 days, a bandana at 10, sunglasses at 45, a cape at 100 and a golden crown at a full year. A broken streak never takes anything away.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Can it help me keep a New Year's resolution?</summary>
+            <div class="answer">
+              <p>Yes, that's a great use for it. Turn the resolution into one small action ("read 10 pages", "a 10 minute walk"), give it its own puppy and a reminder, and put the Lock Screen widget where you'll see it. Your pup learns its first new trick at a 3-day streak and keeps learning for a year. There's more in our guide to <a href="guides/new-years-resolutions/">keeping a New Year's resolution</a>.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Is Habit Pups on Android or the web?</summary>
+            <div class="answer">
+              <p>Not yet: Habit Pups is for iPhone (iOS 17 or later). Your kennel also syncs to an iPad signed in to the same Apple ID.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Is it free?</summary>
+            <div class="answer">
+              <p>Two dogs are free, with everything: tricks, toys, outfits, widgets and sharing. <strong>Habit Pups Plus</strong> makes room for up to 10 dogs, for $9.99 a year or $1.99 a month (prices may vary by country). Cancel any time; your dogs and their history are never lost.</p>
+            </div>
+          </details>
+          <details>
+            <summary>How do I restore Plus, or use a promo code?</summary>
+            <div class="answer">
+              <p>In the app, go to <strong>Settings › Habit Pups Plus</strong> and tap <strong>Restore purchases</strong> (sign in with the Apple ID you bought it with) or <strong>Redeem code</strong>. Codes also work in the App Store app: tap your profile picture, then <strong>Redeem Gift Card or Code</strong>.</p>
+            </div>
+          </details>
+          <details>
+            <summary>How do I cancel my subscription?</summary>
+            <div class="answer">
+              <p>Subscriptions are handled by Apple. On your iPhone, open <strong>Settings</strong>, tap your name, then <strong>Subscriptions</strong>, and pick Habit Pups. You can also get there from <strong>Settings › Habit Pups Plus › Manage subscription</strong> in the app.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Will my dogs move to a new iPhone?</summary>
+            <div class="answer">
+              <p>Yes. Your kennel syncs through your own iCloud, so sign in with the same Apple ID and your dogs and their history come with you. It also keeps an iPhone and an iPad in step. You can check it's on in the app under <strong>Settings › Data</strong>.</p>
+            </div>
+          </details>
+          <details id="faq-widgets">
+            <summary>How do I add a widget?</summary>
+            <div class="answer">
+              <p><strong>Home Screen:</strong> touch and hold an empty spot until the apps jiggle, tap <strong>Edit › Add Widget</strong>, search for Habit Pups and pick a size.</p>
+              <p><strong>Lock Screen:</strong> touch and hold the Lock Screen, tap <strong>Customize › Lock Screen</strong>, tap the space under the clock and pick Habit Pups. The round one shows a dog of your choice, in a ring that fills as the day's habits get done.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Can it remind me?</summary>
+            <div class="answer">
+              <p>Yes, two ways. An evening nudge (Settings › Reminder) goes out only if a dog is still waiting, and each habit can have its own reminder at a time you choose. Do the habit early and that day's reminder stays quiet.</p>
+            </div>
+          </details>
+          <details>
+            <summary>What do you do with my data?</summary>
+            <div class="answer">
+              <p>Nothing: we never see it. There are no accounts, no ads and no tracking. Your habits live on your device and in your own iCloud. <a href="privacy.html">Read the privacy policy</a>.</p>
+              <p>To delete everything, go to <strong>Settings › Data › Reset everything</strong> in the app. To take a copy first, use <strong>Export data</strong>.</p>
+            </div>
+          </details>
+        </div>
+
+        <div class="contact" id="support">
+          <p>Still stuck, found a bug, or have an idea? We read every message.</p>
+          <!-- Support address: also in the app (SupportMail.address). -->
+          <a class="mail" href="mailto:support@habitpups.app">support@habitpups.app</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Habit Pups</span>
+      <nav aria-label="More">
+        <a href="guides/">Guides</a>
+        <a href="compare/">Compare</a>
+        <a href="press/">Press</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+        <a href="mailto:support@habitpups.app">Contact</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="js/pup/gfx.js"></script>
+  <script src="js/pup/rig.js"></script>
+  <script src="js/pup/data.js"></script>
+  <script src="js/pup/head.js"></script>
+  <script src="js/pup/body.js"></script>
+  <script src="js/pup/renderer.js"></script>
+  <script src="js/pup/motion.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>

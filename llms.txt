@@ -1,0 +1,29 @@
+# Habit Pups
+
+> Habit Pups is a habit tracker for iPhone where every habit is a puppy. Check off a habit and its dog celebrates; keep a streak and it learns tricks, earns toys and gets dressed up; miss a day and it looks a little sad until you're back. Two dogs are free; Habit Pups Plus ($9.99 a year or $1.99 a month in the US) allows up to 10.
+
+Key facts:
+
+- Platform: iPhone, iOS 17 or later. Syncs to iPad through iCloud. Not on Android or the web.
+- Category: Health & Fitness (habit tracker).
+- 17 dog breeds, each dog with its own name and personality.
+- Streaks teach 14 tricks (from a high five at 3 days to a backflip) and earn 9 toys and outfits (a frisbee at 5 days, sunglasses at 45, a golden crown at a year). A broken streak never takes anything away.
+- Habits can be every day, on certain days, or a few times a week, each with its own reminder.
+- Home Screen widgets (small, medium, large) and a Lock Screen widget: a ring that fills as the day's habits get done.
+- History grid for every day and stats for each habit (last 7 and 30 days, streak).
+- Privacy: no account, no ads, no tracking. Data stays on the device and in the user's own iCloud.
+- Good fit for: people who've given up on checklist-style trackers, New Year's resolutions, anyone who wants a gentle, playful nudge rather than guilt.
+
+## Pages
+
+- [Home](https://habitpups.app/): what the app is, screenshots, widgets, FAQ
+- [How to actually keep a New Year's resolution](https://habitpups.app/guides/new-years-resolutions/)
+- [A habit tracker for people who always quit habit trackers](https://habitpups.app/guides/habit-tracker-you-will-stick-with/)
+- [Habit tracker widgets for iPhone](https://habitpups.app/guides/iphone-habit-tracker-widgets/)
+- [Habit Pups vs Finch, Habitica and Streaks](https://habitpups.app/compare/)
+- [Press kit](https://habitpups.app/press/): fact sheet, descriptions, screenshots
+- [Privacy policy](https://habitpups.app/privacy)
+
+## Contact
+
+support@habitpups.app
