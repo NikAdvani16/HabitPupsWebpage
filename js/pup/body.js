@@ -72,7 +72,8 @@
         hip: cam.point(g.bodyPoint([h[0] * 0.95, h[1] + 0.12, h[2] * 0.85])),
         ankle: cam.point(V.add(foot, [0, 0.12, 0])),
         paw: cam.ellipse(pawCenter, V.mv(g.yawM, [0.22, 0, 0]), [0, 0.12, 0], V.mv(g.yawM, [0, 0, 0.19])),
-        raised: lifted,
+        // Up on its hind legs (dancing), the front legs hang in front of the chest.
+        raised: lifted || ((leg === 0 || leg === 1) && g.pose.frontFollow > 0.5 && vis > -0.3),
         overHead: lifted && (leg === 0 || leg === 1)
           && cam.depth(pawCenter) > cam.depth(g.headCenter) + 0.35
           && pawCenter[1] > g.headCenter[1] - 0.95,

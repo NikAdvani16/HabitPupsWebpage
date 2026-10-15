@@ -38,8 +38,9 @@
   "screenshot": [
     "https://habitpups.app/assets/screens/01-kennel.jpg",
     "https://habitpups.app/assets/screens/02-check-off.jpg",
-    "https://habitpups.app/assets/screens/03-tricks.jpg",
-    "https://habitpups.app/assets/screens/07-widget-large.jpg"
+    "https://habitpups.app/assets/screens/03-parade.jpg",
+    "https://habitpups.app/assets/screens/04-tricks.jpg",
+    "https://habitpups.app/assets/screens/08-widget-large.jpg"
   ],
   "featureList": [
     "One puppy per habit, from 17 breeds",
@@ -134,10 +135,10 @@
     },
     {
       "@type": "Question",
-      "name": "Is Habit Pups on Android or the web?",
+      "name": "Is Habit Pups on Android?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not yet: Habit Pups is for iPhone (iOS 17 or later). Your kennel also syncs to an iPad signed in to the same Apple ID."
+        "text": "Coming soon. Habit Pups launches first on iPhone (iOS 17 or later), where your kennel also syncs to an iPad signed in to the same Apple ID. An Android version is on the way to Google Play."
       }
     },
     {
@@ -221,8 +222,8 @@
       <section class="hero">
         <div class="hero-copy">
           <img class="logo" src="assets/logo.png" alt="Habit Pups">
-          <p class="eyebrow">A habit tracker for iPhone</p>
-          <h1>Every habit gets a <em>puppy.</em></h1>
+          <p class="eyebrow">The cutest habit tracker ever</p>
+          <h1>Every habit gets a <em>pup.</em></h1>
           <p class="lede">Check off a habit and your dog celebrates. Keep a streak and it learns tricks, earns toys and gets dressed up. Miss a day, and it misses you.</p>
           <div class="cta-row">
             <!-- When the app is live: set href to its App Store link and remove aria-disabled. -->
@@ -230,11 +231,16 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.84.86-3.6 2.18-1.54 2.66-.39 6.6 1.1 8.76.73 1.06 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.41 1.2-2.47-.03-.01-2.3-.88-2.32-3.52zM14.2 6.13c.6-.73 1-1.73.9-2.74-.87.04-1.92.58-2.54 1.3-.56.64-1.05 1.67-.92 2.66.97.07 1.96-.49 2.56-1.22z"/></svg>
               <span><small>Coming soon to the</small>App Store</span>
             </a>
-            <span class="price-note">Two dogs free. iPhone.</span>
+            <!-- The Android version: set href and remove aria-disabled when it's on Google Play. -->
+            <a class="store" href="#" aria-disabled="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L4.7 2.3l-.1.1zm12.3 12.4-3-3v-.2l3-3h.1l3.6 2c1 .6 1 1.5 0 2.1l-3.6 2.1h-.1zm-.1.1L13.7 12l-9.1 9.1c.3.4.9.4 1.5.1l10.7-6.1M16.8 9.1 6.1 3c-.6-.4-1.2-.3-1.5.1l9.1 9.1 3.1-3.1z"/></svg>
+              <span><small>Coming soon to</small>Google Play</span>
+            </a>
+            <span class="price-note">Two dogs free.</span>
           </div>
         </div>
 
-        <div class="studio" aria-label="Meet the pups: pick a breed, a trick and something to wear">
+        <div class="studio" aria-label="Meet the pups: pick a breed and teach it a trick">
           <div class="yard" id="yard">
             <canvas id="yard-bg" aria-hidden="true"></canvas>
             <canvas id="yard-dog" role="img" aria-label="A golden retriever puppy, wagging its tail"></canvas>
@@ -248,15 +254,7 @@
             </div>
             <div class="group">
               <h3 id="trick-label">Teach a trick</h3>
-              <div class="chips" id="tricks" role="group" aria-labelledby="trick-label"></div>
-            </div>
-            <div class="group">
-              <h3 id="wear-label">Dress up</h3>
-              <div class="wear" id="wear" role="group" aria-labelledby="wear-label"></div>
-            </div>
-            <div class="group">
-              <h3 id="mood-label">How's the habit going?</h3>
-              <div class="chips" id="moods" role="group" aria-labelledby="mood-label"></div>
+              <div class="chips tricks" id="tricks" role="group" aria-labelledby="trick-label"></div>
             </div>
           </div>
         </div>
@@ -280,13 +278,14 @@
         <ul class="reel" id="reel" tabindex="0" aria-label="App screenshots">
             <li><img src="assets/screens/01-kennel.jpg" width="600" height="1303" loading="eager" alt="Every habit gets a puppy: eight dogs in the summer yard"></li>
             <li><img src="assets/screens/02-check-off.jpg" width="600" height="1303" loading="eager" alt="Check it off: Bruno leaps for joy in a burst of confetti"></li>
-            <li><img src="assets/screens/03-tricks.jpg" width="600" height="1303" loading="eager" alt="Streaks teach tricks: Luna learns High five and earns a bandana"></li>
-            <li><img src="assets/screens/04-notice.jpg" width="600" height="1303" loading="lazy" alt="They notice when you skip: Nube missed you yesterday"></li>
-            <li><img src="assets/screens/05-history.jpg" width="600" height="1303" loading="lazy" alt="Every day at a glance: the History tab"></li>
-            <li><img src="assets/screens/06-stats.jpg" width="600" height="1303" loading="lazy" alt="Honest stats for every habit: Bruno's grid and streak"></li>
-            <li><img src="assets/screens/07-widget-large.jpg" width="600" height="1303" loading="lazy" alt="The large widget: the whole kennel on your Home Screen"></li>
-            <li><img src="assets/screens/08-widget-medium.jpg" width="600" height="1303" loading="lazy" alt="The medium widget: a few pups, always in view"></li>
-            <li><img src="assets/screens/09-schedules.jpg" width="600" height="1303" loading="lazy" alt="Any schedule, gentle reminders: Luna's weekday runs at 6:45"></li>
+            <li><img src="assets/screens/03-parade.jpg" width="600" height="1303" loading="eager" alt="Finish the day, throw a parade: all eight dogs line up in front of the kennel"></li>
+            <li><img src="assets/screens/04-tricks.jpg" width="600" height="1303" loading="lazy" alt="Streaks teach tricks: Luna learns High five and earns a bandana"></li>
+            <li><img src="assets/screens/05-notice.jpg" width="600" height="1303" loading="lazy" alt="They notice when you skip: Nube missed you yesterday"></li>
+            <li><img src="assets/screens/06-history.jpg" width="600" height="1303" loading="lazy" alt="Every day at a glance: the History tab"></li>
+            <li><img src="assets/screens/07-stats.jpg" width="600" height="1303" loading="lazy" alt="Honest stats for every habit: Bruno's grid and streak"></li>
+            <li><img src="assets/screens/08-widget-large.jpg" width="600" height="1303" loading="lazy" alt="The large widget: the whole kennel on your Home Screen"></li>
+            <li><img src="assets/screens/09-widget-medium.jpg" width="600" height="1303" loading="lazy" alt="The medium widget: a few pups, always in view"></li>
+            <li><img src="assets/screens/10-schedules.jpg" width="600" height="1303" loading="lazy" alt="Any schedule, gentle reminders: Luna's weekday runs at 6:45"></li>
         </ul>
       </section>
 
@@ -390,9 +389,9 @@
             </div>
           </details>
           <details>
-            <summary>Is Habit Pups on Android or the web?</summary>
+            <summary>Is Habit Pups on Android?</summary>
             <div class="answer">
-              <p>Not yet: Habit Pups is for iPhone (iOS 17 or later). Your kennel also syncs to an iPad signed in to the same Apple ID.</p>
+              <p>Coming soon. Habit Pups launches first on iPhone (iOS 17 or later), where your kennel also syncs to an iPad signed in to the same Apple ID. An Android version is on the way to Google Play.</p>
             </div>
           </details>
           <details>

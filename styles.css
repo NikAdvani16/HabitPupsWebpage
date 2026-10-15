@@ -121,6 +121,10 @@ h1, h2, h3 { font-family: var(--round); margin: 0; text-wrap: balance; letter-sp
 .chip[aria-pressed="true"] { background: var(--coral); border-color: var(--coral); color: #fff; }
 .chip.trick { background: #fff7e6; border-color: #f1d9a8; }
 .chip.trick:hover { background: #ffefcc; }
+/* Twelve tricks in two rows of six. On a phone the two rows scroll sideways. */
+.chips.tricks { display: grid; grid-template-columns: repeat(6, auto); justify-content: space-between; gap: 7px 5px; }
+.chips.tricks .chip { white-space: nowrap; font-size: 13px; padding: 6px 9px; }
+.cta-row .store { min-width: 168px; }
 .wear { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; align-items: start; }
 .wear .slot { display: grid; gap: 5px; }
 .wear .slot span { font-size: 12px; font-weight: 800; color: var(--ink-soft); }
@@ -319,6 +323,13 @@ footer a { color: var(--ink-soft); font-weight: 700; }
   .reel { grid-auto-columns: 62%; gap: 14px; }
   .reel-nav { display: none; }
   .widget-grid { grid-template-columns: 1fr; }
+  .chips.tricks {
+    grid-template-columns: none; grid-template-rows: repeat(2, auto); grid-auto-flow: column;
+    justify-content: start; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px;
+  }
+  .chips.tricks::-webkit-scrollbar { display: none; }
+  .cta-row .store { min-width: 0; flex: 1 1 0; padding: 10px 12px; gap: 8px; font-size: 15px; white-space: nowrap; }
+  .cta-row .price-note { flex-basis: 100%; }
   .guide-list.cols { grid-template-columns: 1fr; }
   .widget-row { grid-template-columns: 1fr; }
   .facts { grid-template-columns: 1fr; gap: 2px; }

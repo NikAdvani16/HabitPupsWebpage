@@ -125,6 +125,12 @@
           local = V.add(local, V.mul(V.sub(turned, local), follow));
         }
         let foot = V.add(this.root, V.mv(this.yawM, local));
+        if (front && p.coverEyes > 0) {
+          // Peekaboo: the legs go up with the paws over the eyes, to under the chin.
+          const underChin = V.add(this.headCenter, V.mv(this.yawM, [0.1, -0.3, s * 0.2]));
+          const k = M.smooth(0, 0.6, p.coverEyes);
+          foot = V.add(foot, V.mul(V.sub(underChin, foot), k));
+        }
         if (front && o[1] > 0.3) {
           const hipPoint = this.bodyPoint([hip[0] * 0.95, hip[1] + 0.12, hip[2] * 0.85]);
           const ankle = V.add(foot, [0, 0.12, 0]);

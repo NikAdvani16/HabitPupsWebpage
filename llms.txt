@@ -4,7 +4,7 @@
 
 Key facts:
 
-- Platform: iPhone, iOS 17 or later. Syncs to iPad through iCloud. Not on Android or the web.
+- Platform: iPhone, iOS 17 or later; syncs to iPad through iCloud. Android (Google Play) coming soon. No web version.
 - Category: Health & Fitness (habit tracker).
 - 17 dog breeds, each dog with its own name and personality.
 - Streaks teach 14 tricks (from a high five at 3 days to a backflip) and earn 9 toys and outfits (a frisbee at 5 days, sunglasses at 45, a golden crown at a year). A broken streak never takes anything away.

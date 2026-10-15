@@ -1,6 +1,6 @@
 // The pup studio in the hero: one of the app's own dogs, drawn and animated by the app's own
 // renderer and motion engine (ported in js/pup), in a little yard. Pick a breed, teach it a
-// trick, dress it up, and set how the habit's going.
+// trick.
 (function () {
   const Pup = window.Pup, data = window.PupData;
   const yard = document.getElementById('yard');
@@ -253,46 +253,6 @@
     ['Play dead', 'playDead'], ['Peekaboo', 'peekaboo'], ['Chase tail', 'chaseTail'], ['Dance', 'hindLegDance'],
     ['Treat on nose', 'treatOnNose'], ['Leap', 'leap'], ['Backflip', 'backflip']].forEach(([label, clip]) => {
     tricks.appendChild(chip(label, null, () => { puppy.play(clip); start(); }, 'trick'));
-  });
-
-  const wear = document.getElementById('wear');
-  function slot(title, options, current, set) {
-    const box = document.createElement('div');
-    box.className = 'slot';
-    const t = document.createElement('span');
-    t.textContent = title;
-    const row = document.createElement('div');
-    row.className = 'chips';
-    row.setAttribute('role', 'group');
-    row.setAttribute('aria-label', title);
-    for (const [label, value] of options) {
-      const b = chip(label, value === current, () => {
-        set(value);
-        press(row, b);
-        restyle();
-        puppy.play('wiggle');
-      });
-      row.appendChild(b);
-    }
-    box.append(t, row);
-    wear.appendChild(box);
-  }
-  slot('Head', [['Nothing', null], ['Beanie', 'beanie'], ['Earmuffs', 'earmuffs'], ['Crown', 'crown'], ['Party hat', 'partyHat']], state.hat, (v) => (state.hat = v));
-  slot('Face', [['Nothing', false], ['Sunglasses', true]], state.sunglasses, (v) => (state.sunglasses = v));
-  slot('Neck', [['Collar', 'collar'], ['Bandana', 'bandana'], ['Scarf', 'scarf'], ['Nothing', 'none']], state.neck, (v) => (state.neck = v));
-  slot('Back', [['Nothing', false], ['Cape', true]], state.cape, (v) => (state.cape = v));
-
-  const moods = document.getElementById('moods');
-  [['Done today', 'happy'], ['Waiting for you', 'eager'], ['Missed a day', 'sad']].forEach(([label, mood]) => {
-    const b = chip(label, mood === state.mood, () => {
-      state.mood = mood;
-      press(moods, b);
-      puppy.setMood(mood);
-      if (mood === 'happy') puppy.play('celebrate');
-      describe();
-      start();
-    });
-    moods.appendChild(b);
   });
 
   describe();
